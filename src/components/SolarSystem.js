@@ -12,15 +12,13 @@ class SolarSystem extends Component {
     return (
       <div data-testid="solar-system" className="planet-container">
         <Title headline={ prop } />
-        <PlanetCard
-          planetName={ Planets.map((value, index) => (
-            <PlanetCard
-              key={ index }
-              planetName={ value.name }
-              planetImage={ value.image }
-            />
-          )) }
-        />
+        {
+          Planets.map((value, index) => (<PlanetCard
+            key={ index }
+            planetName={ value.name }
+            planetImage={ value.image }
+          />))
+        }
       </div>
     );
   }
