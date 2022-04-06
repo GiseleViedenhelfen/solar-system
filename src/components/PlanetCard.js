@@ -7,21 +7,19 @@ class PlanetCard extends Component {
   render() {
     const { planetName, planetImage } = this.props;
     return (
-      planetName.map((name, index) => (
-        <div key={ name } data-testid="planet-card" className="planet-card">
-          <p data-testid="planet-name">{name}</p>
-          <img
-            src={ planetImage[index] }
-            alt={ `Planeta ${name}` }
-            className="planet-image"
-          />
-        </div>
-      ))
+      <div data-testid="planet-card" className="planet-card">
+        <p data-testid="planet-name">{planetName}</p>
+        <img
+          src={ planetImage }
+          alt={ `Planeta ${planetName}` }
+          className="planet-image"
+        />
+      </div>
     );
   }
 }
 PlanetCard.propTypes = {
-  planetImage: PropTypes.arrayOf(PropTypes.string).isRequired,
-  planetName: PropTypes.arrayOf(PropTypes.string).isRequired,
+  planetImage: PropTypes.string.isRequired,
+  planetName: PropTypes.string.isRequired,
 };
 export default PlanetCard;
