@@ -9,7 +9,7 @@ class PlanetCard extends Component {
     return (
       planetName.map((name, index) => (
         <div key={ name } data-testid="planet-card">
-          <p>{name}</p>
+          <p data-testid="planet-name">{name}</p>
           <img src={ planetImage[index] } alt={ `Planeta ${name}` } />
         </div>
       ))
