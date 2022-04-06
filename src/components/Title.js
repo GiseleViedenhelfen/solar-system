@@ -10,6 +10,7 @@ class Title extends Component {
       <h2>
         {headline}
       </h2>
+
     );
   }
 }

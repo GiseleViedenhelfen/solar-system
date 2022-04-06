@@ -1,13 +1,16 @@
 .App {
   text-align: center;
 }
+
 .planet-container {
   display: flex;
 }
+
 .planet-card {
   border: 1px solid black;
   max-width: 150px;
 }
+
 .planet-image {
   max-width: 150px;
 }
