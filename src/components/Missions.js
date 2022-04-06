@@ -9,14 +9,18 @@ class Missions extends Component {
   render() {
     const prop = 'Missões';
     return (
-      <div data-testid="missions">
+      <div data-testid="missions" className="missions-container">
         <Title headline={ prop } />
-        {mission.map((value, index) => (<MissionCard
-          key={ index }
-          name={ value.name }
-          country={ value.country }
-          destination={ value.destination }
-        />))}
+        <div className="missions-card-container">
+          {mission.map((value, index) => (
+            <MissionCard
+              key={ index }
+              name={ value.name }
+              country={ value.country }
+              destination={ value.destination }
+            />
+          ))}
+        </div>
       </div>
     );
   }
