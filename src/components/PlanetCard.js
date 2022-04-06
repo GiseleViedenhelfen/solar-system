@@ -8,9 +8,13 @@ class PlanetCard extends Component {
     const { planetName, planetImage } = this.props;
     return (
       planetName.map((name, index) => (
-        <div key={ name } data-testid="planet-card">
+        <div key={ name } data-testid="planet-card" className="planet-card">
           <p data-testid="planet-name">{name}</p>
-          <img src={ planetImage[index] } alt={ `Planeta ${name}` } />
+          <img
+            src={ planetImage[index] }
+            alt={ `Planeta ${name}` }
+            className="planet-image"
+          />
         </div>
       ))
     );
