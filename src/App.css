@@ -9,8 +9,8 @@ h1 {
 
 h2 {
   border: 1px solid black;
-  padding: 10px;
   border-radius: 10px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -20,8 +20,8 @@ h2 {
 }
 
 .planet-card {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: column;
   max-width: 20%;
 }
@@ -31,11 +31,11 @@ h2 {
 }
 
 .missions-container {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   border: 1px solid black;
+  justify-content: center;
   border-radius: 10px;
   margin: 50px;
   padding: 3%;
@@ -51,8 +51,8 @@ h2 {
 }
 
 #root {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: column;
 }
 
